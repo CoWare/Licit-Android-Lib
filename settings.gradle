@@ -1,1 +1,1 @@
-include ':licit'
+include ':app', ':android-lib'
