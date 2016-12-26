@@ -1,6 +1,7 @@
 package com.coware.licit.lib.models;
 
 import com.coware.licit.lib.models.Enums.Permission;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,10 @@ import java.util.List;
  */
 
 public class Share {
+    @SerializedName("_id")
     private String UserId;
+
+    @SerializedName("permissions")
     private List<Permission> Permissions = new ArrayList();
 
     public Share(List<Permission> permissions, String userId) {
