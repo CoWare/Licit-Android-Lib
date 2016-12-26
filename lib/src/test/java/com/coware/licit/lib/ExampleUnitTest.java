@@ -1,4 +1,4 @@
-package com.coware.licit.android_lib;
+package com.coware.licit.lib;
 
 import org.junit.Test;
 

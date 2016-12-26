@@ -1,6 +1,6 @@
-package com.coware.licit.android_lib.models;
+package com.coware.licit.lib.models;
 
-import com.coware.licit.android_lib.models.Enums.DocumentType;
+import com.coware.licit.lib.models.Enums.DocumentType;
 
 import java.util.ArrayList;
 import java.util.List;

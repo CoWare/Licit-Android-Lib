@@ -1,4 +1,4 @@
-package com.coware.licit.android_lib.models.Enums;
+package com.coware.licit.lib.models.Enums;
 
 /**
  * Created by bolorundurowb on 12/23/16.

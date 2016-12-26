@@ -1,6 +1,6 @@
-package com.coware.licit.android_lib.models;
+package com.coware.licit.lib.models;
 
-import com.coware.licit.android_lib.models.Enums.UserType;
+import com.coware.licit.lib.models.Enums.UserType;
 
 import java.util.List;
 
@@ -9,6 +9,7 @@ import java.util.List;
  */
 
 public class User {
+
     private String Username;
     private String Email;
     private String Password;

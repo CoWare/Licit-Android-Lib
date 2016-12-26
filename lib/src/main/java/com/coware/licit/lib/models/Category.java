@@ -1,4 +1,4 @@
-package com.coware.licit.android_lib.models;
+package com.coware.licit.lib.models;
 
 import java.util.List;
 
