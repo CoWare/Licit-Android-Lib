@@ -1,5 +1,7 @@
 package com.coware.licit.lib.models;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 /**
@@ -7,9 +9,16 @@ import java.util.List;
  */
 
 public class Category {
+    @SerializedName("name")
     private String Name;
+
+    @SerializedName("_id")
     private String CategoryId;
+
+    @SerializedName("did")
     private List<String> DocumentIds;
+
+    @SerializedName("timeCreated")
     private String Time;
 
     public Category(String name, String categoryId, List<String> documentIds, String time) {
