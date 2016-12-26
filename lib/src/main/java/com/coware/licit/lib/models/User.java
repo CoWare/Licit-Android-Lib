@@ -1,6 +1,7 @@
 package com.coware.licit.lib.models;
 
 import com.coware.licit.lib.models.Enums.UserType;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
@@ -9,12 +10,22 @@ import java.util.List;
  */
 
 public class User {
-
+    @SerializedName("username")
     private String Username;
+
+    @SerializedName("email")
     private String Email;
+
+    @SerializedName("password")
     private String Password;
+
+    @SerializedName("_id")
     private String UserId;
+
+    @SerializedName("documents")
     private List<Document> Documents;
+
+    @SerializedName("type")
     private UserType UserType;
 
     public String getUsername() {
