@@ -1,6 +1,7 @@
 package com.coware.licit.lib.models;
 
 import com.coware.licit.lib.models.Enums.DocumentType;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +11,25 @@ import java.util.List;
  */
 
 public class Document {
+    @SerializedName("documentName")
     private String Name;
+
+    @SerializedName("_id")
     private String DocumentId;
+
+    @SerializedName("owner")
     private String OwnerId;
+
+    @SerializedName("categories")
     private List<Category> Categories = new ArrayList();
+
+    @SerializedName("type")
     private DocumentType Type;
+
+    @SerializedName("shared")
     private List<Share> Shared = new ArrayList();
+
+    @SerializedName("timeCreated")
     private String TimeCreated;
 
     public Document(String name, String documentId, String ownerId, List<Category> categories, DocumentType type, List<Share> shared, String timeCreated) {
