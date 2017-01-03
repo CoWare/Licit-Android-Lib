@@ -11,7 +11,7 @@ import java.util.List;
 
 public class User {
     @SerializedName("username")
-    private String Username;
+    private String Name;
 
     @SerializedName("email")
     private String Email;
@@ -28,12 +28,21 @@ public class User {
     @SerializedName("type")
     private UserType UserType;
 
-    public String getUsername() {
-        return Username;
+    public User(String name, String email, String password, String userId, List<Document> documents, com.coware.licit.lib.models.Enums.UserType userType) {
+        Name = name;
+        Email = email;
+        Password = password;
+        UserId = userId;
+        Documents = documents;
+        UserType = userType;
     }
 
-    public void setUsername(String username) {
-        Username = username;
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
     }
 
     public String getEmail() {

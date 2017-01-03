@@ -1,4 +1,4 @@
-package com.coware.licit.lib.results;
+package com.coware.licit.lib.responses;
 
 import com.coware.licit.lib.models.Share;
 
